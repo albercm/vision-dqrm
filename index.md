@@ -1,7 +1,3 @@
-# Disentangled Planning and Control in Vision Based Robotics via Reward Machines
-In this work we augment a Deep Q-Learning agent with a Reward Machine (DQRM) to increase speed of learning vision-based policies for robot tasks, and overcome some of the limitations of DQN that prevent it from converging to good-quality policies. A reward machine (RM) is a finite state machine that decomposes a task into a discrete planning graph and equips the agent with a reward function to guide it toward task completion. The reward machine can be used for both reward shaping, and informing the policy what abstract state it is currently at. An abstract state is a high level simplification of the current state, defined in terms of task relevant features. These two supervisory signals of reward shaping and knowledge of current abstract state coming from the reward machine complement each other and can both be used to improve policy performance as demonstrated on several vision based robotic pick and place tasks. Particularly for vision based robotics applications, it is often easier to build a reward machine than to try and get a policy to learn the task without this structure.
-
-
 ## Take Home Message
 
 #### We are concerned with...
@@ -21,6 +17,8 @@ In this work we augment a Deep Q-Learning agent with a Reward Machine (DQRM) to 
 - Helps **disentangle** planning and control
 - Is more **sample-efficient**
 - Learns **better-quality** policies
+
+![System Overview](images/system_overview.gif)
 
 - - - -
 
